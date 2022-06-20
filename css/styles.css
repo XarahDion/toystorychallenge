@@ -1,0 +1,144 @@
+@import "_reset.css";
+/*  Color palette
+    -----------------------
+    color       HEX code  RGB code
+    -------------------------------------
+    red:      	#960001	  rgb(150,0,1)
+    yellow:     #e2e55f	  rgb(226,229,95)
+    green:      #96c25f	  rgb(150,194,95)
+    blue:       #5582c6	  rgb(85,130,198)
+    purple: 	  #79519f	  rgb(121,81,159) 
+
+    fonts
+    -----------------------
+    headings:   Cabin
+    body:       Roboto
+
+    font-sizes:
+    -----------------------
+    h1:   70px
+    h2:   36px
+    h3    24px
+    body: 17px (all other text)
+
+    breakpoints
+    -----------------------
+    desktop: 1200px
+    
+    max-width of the content is 1400px
+*/
+
+/* Add all of your styles here */
+
+body {
+  font: 17px Roboto, Helvetica, sans-serif;
+  background-color: #5582c6;
+  color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.item {
+  margin: 25px 100px 25px 100px;
+}
+.wallpaper {
+  width: 1200px;
+  height: 425px;
+  object-fit: cover;
+  object-position: 100% 0;
+  margin: 0px 0px -250px 0px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+  margin: -230px 5px 0px 20px;
+}
+.synopsis {
+  margin: 110px 0px 0px 0px;
+}
+h1 {
+  color: #960001;
+  font-size: 70px;
+  font-family: Cabin, sans-serif;
+  font-weight: bold;
+  background-color: beige;
+  max-width: 400px;
+  margin: 5px 0px 15px 0px;
+  border: 10px;
+  border-style: solid;
+  border-color: beige;
+}
+h2 {
+  color: #960001;
+  font-size: 36px;
+  font-family: Cabin, sans-serif;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+h3 {
+  color: #960001;
+  font-family: 24px Cabin, sans-serif;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+#quote {
+  color: #960001;
+  background-color: #e2e55f;
+  margin: 5px 0px;
+  border: 25px;
+  border-style: solid;
+  border-color: #e2e55f;
+}
+.Woo {
+  color: #960001;
+  font-weight: bolder;
+  background-color: #e2e55f;
+  margin: 0px 0px 0px 100px ;
+}
+button {
+  background-color: #79519f;
+  color: white;
+  cursor: pointer;
+  margin: 5px 0px 15px 0px;
+  border: none;
+  padding: 15px 100px;
+  width: 300px;
+  font-size: 24px;
+  font-weight: bolder;
+  transition: all 0.4s ease 0s;
+}
+button:hover {
+  color: #960001;
+  background-color: #e2e55f;
+  border-color: #e2e55f;
+  border-radius: 50px;
+  transition: all 0.4s ease 0s;
+  }
+ .characters {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+}
+.characters img {
+  margin: 5px 0px 5px 0px;
+  height: 200px;
+}
+.question {
+  margin: 5px 0px 15px 0px;
+}
+hr {
+  color:#e2e55f
+}
+input {
+  width: inherit;
+  font-size: 24px;
+  margin: 5px 0px 5px 0px;
+}

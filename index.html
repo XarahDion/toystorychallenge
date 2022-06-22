@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="script.js" defer></script>
     <title>Toy Story 4</title>
   </head>
 
@@ -22,7 +23,7 @@
         class="wallpaper"
       />
       <div class="item">
-        <img
+        <div class="header"><img
           src="images/toystory4_movie_poster.jpeg"
           width="300"
           alt="poster"
@@ -30,7 +31,7 @@
         />
         <div class="title">
         <h1>Toy Story 4</h1>
-        </div>
+        </div></div>
         <br>
         <div class="synopsis">
         <h2>Synopsis</h2>
@@ -46,16 +47,16 @@
         </div>
         <br>
         <h2>Characters</h2>
-        <hr>
-        <br>
+        <hr><br>
         <div class="characters">
-          <div id="Woody">
+          <div class="section-left">
             <h3>Woody</h3>
-            <img src="images/character_woody.jpg" alt="Woody" />
+            <div class="Woody">
+            <img src="images/character_woody.jpg" alt="Woody" id="Woody" title="Woody"/>
             <p>
               Played by
               <a href="https://www.imdb.com/name/nm0000158/" style="color:#e2e55f" target="_blank">Tom Hanks</a>
-            </p>
+            </p><br>
             <span>
               He is a vintage cowboy doll that originally belonged to a boy
               named Andy Davis. As Andy's favorite since kindergarten, Woody
@@ -67,13 +68,15 @@
               lost toys find owners, alongside his girlfriend Bo Peep.
             </span>
           </div>
-          <div id="Buzz">
+          </div>
+          <div class="section-right">
             <h3>Buzz Lightyear</h3>
-            <img src="images/character_buzz.jpg" alt="Buzz Lightyear" />
+            <div class="Buzz">
+            <img src="images/character_buzz.jpg" alt="Buzz Lightyear" id="Buzz" title="Buzz"/>
             <p>
               Played by
               <a href="https://www.imdb.com/name/nm0000741/" style="color:#e2e55f" target="_blank">Tim Allen</a>
-            </p>
+            </p><br>
             <span>
               He is a spaceman action figure originally belonging to Andy Davis.
               Buzz was created during a time where astronauts were especially
@@ -82,13 +85,15 @@
               this rivalry would eventually blossom into a lifelong friendship.
             </span>
           </div>
-          <div id="Forky">
+          </div>
+          <div class="section-left">
             <h3>Forky</h3>
-            <img src="images/character_forky.jpg" alt="Forky" class="Forky" />
+            <div class="Forky" >
+            <img src="images/character_forky.jpg" alt="Forky" id="Forky" title="Forky"/>
             <p>
               Played by
               <a href="https://www.imdb.com/name/nm0355024/" style="color:#e2e55f" target="_blank">Tony Hale</a>
-            </p>
+            </p><br>
             <span>
               An actual spork-turned-craft-project, Forky is pretty sure that he
               doesn't belong in Bonnie's room. Unfortunately, every time he
@@ -97,14 +102,16 @@
               spork, so he's facing a crisis. He wants to fulfill his purpose as
               a spork, but now has a new toy purpose thrust upon him.
             </span>
+            </div>
           </div>
-          <div id="Bo">
+          <div class="section-right">
             <h3>Bo Peep</h3>
-            <img src="images/character_bopeep.jpg" alt="Bo Peep" />
+            <div class="Bo">
+            <img src="images/character_bopeep.jpg" alt="Bo Peep" id="Bo" title="Bo"/>
             <p>
               Played by
               <a href="https://www.imdb.com/name/nm0001633/" style="color:#e2e55f" target="_blank">Annie Potts</a>
-            </p>
+            </p><br>
             <span>
               Bo is the romantic interest (later girlfriend) of Woody, providing
               a calm and loving comfort whenever he is overwhelmed. She is noted
@@ -117,11 +124,12 @@
               lamp comforted Molly and she would often have her hand lay on Bo's
               feet.
             </span>
+            </div>
           </div>
         </div>
         <br>
         <p id="quote">
-          <span class="Woo">Woody</span>: "Being there for a child in the most
+          <span id="Woo">Woody</span>: "Being there for a child in the most
           noble thing a toy can do."
         </p>
         <br>
@@ -129,9 +137,9 @@
         <hr>
         <br>
         <div class="Question"><p>How would you rate Toy Story 4?</p></div>
-        <input type="text" name="comments">
+        <input type="text" name="comments" placeholder="Enter comments">
         <br>
-        <div class="Button"><button>Rate it!</button></div>
+        <div class="Button"><button id="Button">Rate it!</button></div>
       </div>
     </div>
   </body>

@@ -34,6 +34,7 @@
 
 body {
   font: 17px Roboto, sans-serif;
+  /* font-weight: 100; */
   background-color: #5582c6;
   color: white;
 }
@@ -58,9 +59,9 @@ body {
 .title {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  /* justify-content: flex-start; */
-  /* align-items: stretch; */
+  /* flex-wrap: wrap; 
+  /* justify-content: flex-start; 
+  /* align-items: stretch; 
   /* align-content: center; */
   margin: 225px 120px 0px 120px;
 }
@@ -107,19 +108,19 @@ h3 {
   background-color: #e2e55f;
   margin: 0px 0px 0px 100px ;
 }
-button {
+.button {
   background-color: #79519f;
   color: white;
   cursor: pointer;
   margin: 5px 0px 15px 0px;
   border: none;
-  padding: 15px 100px;
-  width: 300px;
+  padding: 10px 100px;
+  width: 310px;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
   transition: all 0.4s ease 0s;
 }
-button:hover {
+.button:hover {
   color: #960001;
   background-color: #e2e55f;
   border-color: #e2e55f;
@@ -129,21 +130,21 @@ button:hover {
 .characters {
   display: flex;
   flex-wrap: wrap;
-  /* background-color: grey; */
-  /* align-content: center; */
-  /* justify-content: space-around; */
-  /* Always on main axis */
-  /* align-items: stretch; */
-  /* Always on cross axis */
+  /* background-color: grey;
+  /* align-content: center;
+  /* justify-content: space-around;
+  /* Always on main axis
+  /* align-items: stretch;
+  /* Always on cross axis
   /* flex-basis: 25%; */
 }
 .section-right, .section-left {
   display: flex;
   flex-basis: 550px;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* text-orientation: sideways-right; */
-  /* width: 200px; */
+  /* justify-content: space-between;
+  /* text-orientation: sideways-right;
+  /* width: 200px;
   /* height: 200px; */
 }
 .section-right h3 {
@@ -176,6 +177,13 @@ hr {
 }
 input {
   width: inherit;
-  font-size: 24px;
+  margin: 5px 0px 15px 0px;
+  border: none;
+  padding: 5px;
+  width: 300px;
+  font: 17px Roboto, sans-serif;
   margin: 5px 0px 5px 0px;
+}
+#ratings {
+  padding: 10px;
 }

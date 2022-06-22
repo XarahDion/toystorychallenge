@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=VT323&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&family=VT323&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="script.js" defer></script>
     <title>Toy Story 4</title>
   </head>
 
@@ -137,11 +136,15 @@
         <hr>
         <br>
         <div class="Question"><p>How would you rate Toy Story 4?</p></div>
-        <input type="text" name="comments" placeholder="Enter comments">
+        <form id="myForm">
+        <input type="text" id="comments" placeholder="Enter comments here">
         <br>
-        <div class="Button"><button id="Button">Rate it!</button></div>
+        <input class="button" type="submit" value="Rate it!">
+        <!--<div class="Button"><button id="Button">Rate it!</button></div> -->
+        </form>
+        <ul id="ratings"></ul>
       </div>
     </div>
+    <script src="./scripts.js"></script>
   </body>
-  <script src="./scripts.js"></script>
 </html>

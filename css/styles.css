@@ -1,6 +1,6 @@
 @import "_reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@200&display=swap');
 /*  Color palette
     -----------------------
     color       HEX code  RGB code
@@ -47,7 +47,7 @@ body {
 }
 .wallpaper {
   width: 1400px;
-  height: 425px;
+  height: 450px;
   object-fit: cover;
   object-position: 100% 0;
   margin: 0px 0px -250px 0px;
@@ -55,6 +55,9 @@ body {
 .header {
   display: flex;
   margin-bottom: -100px;
+}
+.poster {
+  box-shadow: 4px 3px 8px 1px #0000003f;
 }
 .title {
   display: flex;
@@ -76,7 +79,10 @@ h1 {
   background-color: rgb(208, 225, 228);
   max-width: 400px;
   margin: 5px 0px 10px -110px;
-  border: 10px;
+  border-right: 40px;
+  border-left: 40px;
+  border-top: 0px;
+  border-bottom: 5px;
   border-style: solid;
   border-color: rgb(208, 225, 228);
 
@@ -90,9 +96,15 @@ h2 {
 }
 h3 {
   color: #960001;
-  font-family: 24px Cabin, sans-serif;
+  font-size: 24px;
+  font-family: Cabin, sans-serif;
   font-weight: bold;
   margin: 5px 0px;
+}
+a {
+  color:#e2e55f;
+  font-weight: bold;
+  text-decoration:none;
 }
 #quote {
   color: #960001;
@@ -124,7 +136,7 @@ h3 {
   color: #960001;
   background-color: #e2e55f;
   border-color: #e2e55f;
-  border-radius: 50px;
+  border-radius: 30px;
   transition: all 0.4s ease 0s;
   }
 .characters {
@@ -163,11 +175,13 @@ h3 {
   margin: 10px 15px 0px 0px;
   height: 200px;
   float: left;
+  box-shadow: 4px 3px 8px 1px #0000003f;
 }
 #Buzz, #Bo {
   height: 200px;
   margin: 10px 15px 0px 10px;
   float: left ;
+  box-shadow: 4px 3px 8px 1px #0000003f;
 }
 .question {
   margin: 5px 0px 15px 0px;
@@ -182,8 +196,9 @@ input {
   padding: 5px;
   width: 300px;
   font: 17px Roboto, sans-serif;
-  margin: 5px 0px 5px 0px;
+  margin: 10px 0px 10px 0px;
 }
 #ratings {
   padding: 10px;
+  margin: 0px 0px 0px 500px 
 }

@@ -8,9 +8,10 @@ myForm.addEventListener("submit", onSubmit);
 
 function onSubmit(e) {
   e.preventDefault();
+
   if(commentsInput.value === ''){
   } else { const li = document.createElement("li");
-
+  
     li.appendChild(document.createTextNode(`${commentsInput.value}`));
     ratingsList.appendChild(li);
     li.innerHTML = `You said : " ${commentsInput.value} "`;
